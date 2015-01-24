@@ -1,3 +1,6 @@
+speakez
+==============
+
 Speak EZ is built for academic purposes only
 
 Speak EZ provides basic chat room functionality to users as well
