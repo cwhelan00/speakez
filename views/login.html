@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speak EZ</title>
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+
+<body class="login">
+
+	<nav class="nav" role="navigation">
+	  <div class="container-fluid">
+
+	    <div class="navbar-right">
+	      <ul class="nav navbar-nav">
+	        <li id="nav-forum"><a href="http://127.0.0.1:3000/">Sign Up</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container">
+		<form action="/login" method="POST">
+			<div class="row">
+				<h1 class="white col-xs-4 col-xs-offset-4">Speak EZ</h1>
+			</div>
+			<div class="row">
+				<input class="vertical-padding col-xs-4 col-xs-offset-4" name="email" type="text" placeholder="Email"/>
+			</div>
+			<div class="row">
+				<input class="vertical-padding col-xs-4 col-xs-offset-4" name="password" type="password" placeholder="Password"/>
+			</div>
+
+			<div class="row">
+				<p class="white col-xs-4 col-xs-offset-4">{{ message }}</p>
+			</div>
+
+			<div class="row">
+				<button class="btn btn-primary btn-lg col-xs-4 col-xs-offset-4">Login</button>
+			</div>
+			
+		</form>
+	</div>
+
+</body>
+<html>

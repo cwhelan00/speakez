@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speak EZ</title>
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+<body>
+
+	<div class="overlay"></div>
+
+	<div id="room-image" class="jumbotron">
+		<nav class="nav" role="navigation">
+		  <div class="container-fluid">
+		    <div class="navbar-right">
+		      <ul class="nav navbar-nav">
+		        <li id="nav-forum"><a href="http://127.0.0.1:3000/logout">Logout</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container">
+			<h1>Welcome to <span id="room">{{room}}</span>, <span id="username">{{username}}</span></h1>
+		</div>
+	</div>
+
+	<div class="frame col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+
+		<span id="exit" class="glyphicon glyphicon-remove pull-right pointer"></span>
+		<h2 class="fancy">Private Chat</h2>
+
+		<div id="messagesPrivate" class="col-xs-12"></div>
+
+		<form id="sendPrivate">
+			<textarea id="messagePrivate" class="col-xs-8 col-xs-offset-2" placeholder="Message" autocomplete="off" rows="2"></textarea>
+			<button class="col-xs-2 btn btn-primary">Send</button>
+		</form>
+
+	</div>
+
+	<ol class="breadcrumb">
+		<li><a href="http://127.0.0.1:3000/home">Home</a></li>
+		<li class="active">{{room}}</li>
+	</ol>
+
+	<div class="container">
+		<ul id="client-list" class="col-xs-6 col-sm-2"></ul>
+
+		<div class="col-xs-10">
+
+			<div id="messages" class="col-xs-10"></div>
+
+			<form id="send">
+				<textarea id="message" class="col-xs-8" placeholder="Message" autocomplete="off" rows="2"></textarea>
+				<button class="col-xs-2 btn btn-primary">Send</button>
+			</form>
+		</div>
+	</div>
+
+	{{>footer}}
+
+	<!-- jQuery Javascript -->
+  	<script type="text/javascript"
+  	src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  	<!-- Socket.IO -->
+	<script src="/socket.io/socket.io.js"></script>
+
+	<!-- My Scripts -->
+	<script type="text/javascript" src="javascripts/room.js"></script>
+</body>
+</html>

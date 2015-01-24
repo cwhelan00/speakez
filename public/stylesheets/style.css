@@ -1,0 +1,173 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  background-color: #1c1f24;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+	list-style-type: none;
+}
+
+form input {
+	color: black;
+	padding: 0px;
+	border: 0px;
+}
+
+form input:focus {
+	color: black;
+	outline: 0;
+}
+
+form textarea {
+	color: black;
+}
+
+form textarea:focus {
+	color: black;
+	outline: 0;
+}
+
+
+.register {
+	background-image: url("../images/speak.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.login {
+	background-image: url("../images/easy.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center fixed;
+}
+
+#home-image {
+	background-image: url("../images/home.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	box-shadow: 0px 10px 10px black;
+	color: white;
+	height: 500px;
+}
+
+#room-image {
+	background-image: url("../images/bar.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	box-shadow: 0px 10px 10px black;
+	color: white;
+	height: 200px;
+}
+
+#room-image h1 {
+	font-family: 'Lobster Two', Helvetica, sans-serif;
+	color: white;
+	text-shadow: 5px 5px 3px black;
+}
+
+.thumbnail {
+	background-color: #3f3f3f;
+	color: white;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.thumbnail .caption {
+	font-family: 'Lobster Two', Helvetica, sans-serif;
+	color: white;
+	text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
+
+.thumbnail a img {
+	height: 200px;
+	width: 200px;
+}
+
+.vertical-padding {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.white {
+	color: white;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.blue {
+	color: blue;
+}
+
+.purple {
+	color: purple;
+}
+
+.entered {
+	color: gray;
+	opacity: .6;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.client:hover {
+	background-color: black;
+}
+
+#messages {
+	height: 80vh;
+	overflow-y: auto;
+	overflow-x: none;
+	margin-bottom: 50px;
+}
+
+.overlay{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background-color: black;
+	opacity: 0.8;
+}
+
+.frame{
+	background-color: #3f3f3f;
+	position: fixed;
+	z-index: 2;
+	padding: 20px;
+}
+
+.fancy {
+	font-family: 'Lobster Two', Helvetica, sans-serif;
+}
+
+.breadcrumb {
+	background-color: #1c1f24;
+}
+
+#messagesPrivate {
+	height: 50vh;
+	overflow-y: auto;
+	overflow-x: none;
+}
+
+#client-list {
+	background-color: #3f3f3f;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 80vh;
+	box-shadow: 2px 2px 5px #888888;
+}

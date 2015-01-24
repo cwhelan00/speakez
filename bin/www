@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+var debug = require('debug')('chat');
+var app = require('../app');
+var init = require('../socket/init');
+
+//set port to what process has declared. otherwise, set port to 3000
+app.set('port', process.env.PORT || 3000);
+
+//listen to the port to which you just set the server
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+  console.log('listening');
+});
+
+//allow socketio to access server
+init(server);
+
+module.exports = server;
